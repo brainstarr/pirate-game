@@ -288,7 +288,7 @@
 			name = "Pirate ChallengeTests";
 			productName = "Pirate ChallengeTests";
 			productReference = 00F2E96919B926A00092AA8A /* Pirate ChallengeTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -299,6 +299,11 @@
 				CLASSPREFIX = BS;
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Brian Starr";
+				TargetAttributes = {
+					00F2E94119B926A00092AA8A = {
+						DevelopmentTeam = R866V84RRH;
+					};
+				};
 			};
 			buildConfigurationList = 00F2E93C19B926A00092AA8A /* Build configuration list for PBXProject "Pirate Challenge" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -485,10 +490,13 @@
 		00F2E97C19B926A00092AA8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Brian Starr (8EG565K2UY)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pirate Challenge/Pirate Challenge-Prefix.pch";
 				INFOPLIST_FILE = "Pirate Challenge/Pirate Challenge-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -496,10 +504,13 @@
 		00F2E97D19B926A00092AA8A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pirate Challenge/Pirate Challenge-Prefix.pch";
 				INFOPLIST_FILE = "Pirate Challenge/Pirate Challenge-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
