@@ -297,6 +297,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = BS;
+				LastTestingUpgradeCheck = 0640;
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Brian Starr";
 				TargetAttributes = {
